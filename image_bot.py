@@ -63,7 +63,7 @@ def bop(update, context):
 
 
 def main():
-    updater = Updater('812147190:AAFKnWzeHai_42rNmTKDOtbd-HttxLYrAvU', use_context=True)
+    updater = Updater(TOKEN, use_context=True)
     dp = updater.dispatcher
     dp.add_handler(CommandHandler('bop', bop))
     dp.add_handler(CommandHandler('help', help))
